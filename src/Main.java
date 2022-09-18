@@ -10,27 +10,61 @@ public class Main {
         System.out.println(mileage[4]);
         //Задание1.2
         System.out.println("Задание 1.2");
-         System.out.print(height[0] + "," + height[1] + "," + height[2]);
+          for (int i = 1; i < height.length; i++) {
+                 System.out.print(height[i] -1 + ",");
+                   if (i == height.length - 1) {
+                  System.out.print(height[i]);
+              }
+          }
         System.out.println(" ");
-         System.out.print(consistence[0] + "," + consistence[1] + "," + consistence[2]);
+        for (int i = 1; i < consistence.length; i++) {
+            System.out.print(consistence[i] -1 + ",");
+            if (i == consistence.length - 1) {
+                System.out.print(consistence[i]);
+            }
+        }
         System.out.println(" ");
-         System.out.print(mileage[0]+ "," + mileage[1]+ "," + mileage[2]+ "," +mileage[3]+ "," +mileage[4]);
+        for (int i = 1; i < mileage.length; i++) {
+            System.out.print(mileage[i] -1 + ",");
+            if (i == mileage.length - 1) {
+                System.out.print(mileage[i]);
+            }
+        }
          //Задание 1.3
+        System.out.println(" ");
         System.out.println("Задание 1.3");
-        System.out.print(height[2] + "," + height[1] + "," + height[0]);
-        System.out.println(" ");
-        System.out.print(consistence[2] + "," + consistence[1] + "," + consistence[0]);
-        System.out.println(" ");
-        System.out.print(mileage[4]+ "," + mileage[3]+ "," + mileage[2]+ "," +mileage[1]+ "," +mileage[0]);
-        //Задание 1.4
-        System.out.println(" ");
-        System.out.println("Задание 1.4");
-        for ( int i = 0; i < 3; i++) {
-            if ( height[i] % 2 != 0)
-                height[i] = height[i] + 1;
-            System.out.println(height[i]);
+        for (int i = height.length -1; i > -1; i--) {
+            if (i == 0) {
+                System.out.print(height[i]);
+                break;
+            }
+            System.out.print(height[i]  + ",");
+        }
+        System.out.println("");
+        for (int i = consistence.length -1; i > -1; i--) {
+            if (i == 0) {
+                System.out.print(consistence[i]);
+                break;
+            }
+            System.out.print(consistence[i]  + ",");
+        }
+        System.out.println("");
+        for (int i = mileage.length -1; i > -1; i--) {
+            if (i == 0) {
+                System.out.print(mileage[i]);
+                break;
+            }
+            System.out.print(mileage[i]  + ",");
         }
 
+        System.out.println(" ");
+        System.out.println("Задание 1.4");
+        for ( int i = 0; i < height.length; i++) {
+            if (height[i] % 2 != 0) {
+                height[i] = height[i] + 1;
+                System.out.println(height[i]);
+            }
+        }
 
 
 
